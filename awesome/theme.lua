@@ -1,6 +1,6 @@
 theme = {}
 
-theme.wallpaper_cmd = { "fbsetbg /home/mrwilson/Wallpaper/23040_5_centimeters_per_second.jpg" }
+theme.wallpaper_cmd = { "xsetroot -solid black" }
 
 theme.font          = "sans 8"
 
