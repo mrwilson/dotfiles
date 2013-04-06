@@ -1,0 +1,25 @@
+if [ "$TERM" != "dumb" ]
+then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+    alias dir='ls --color=auto --format=vertical'
+    alias vdir='ls --color=auto --format=long'
+fi
+
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
+sagi() { 
+  sudo apt-get install $* && rehash 
+} 
+
+sagr() { 
+  sudo apt-get remove $* && rehash 
+}
+
+off()  { 
+  sudo poweroff 
+}
+
+alias :q='exit'

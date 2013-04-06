@@ -1,0 +1,9 @@
+for machine in arora backus codd estridge
+do
+	alias $machine="ssh $machine.uwcs.co.uk"
+done
+
+alias joshua='ssh csuiav@joshua.dcs.warwick.ac.uk'
+alias dijkstra='ssh dijkstra'
+alias starmount='ssh starmount.probablyfine.co.uk'
+alias mahjong='ssh mahjong@uwcs.co.uk'

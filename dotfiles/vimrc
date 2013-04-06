@@ -1,0 +1,36 @@
+" vimrc - MrWilson
+
+syntax on
+map <Space> <PageDown>
+map <F1> :help<CR><PageDown>
+
+" Aliases because I can't type.
+command -bang Q q
+command -bang W w
+command -bang Wq wq
+command -bang WQ wq
+
+" Make searches case-insensitive, unless they contain upper-case letters
+set ignorecase
+set smartcase
+
+" Search-as-you-type
+set incsearch
+
+set showmatch
+set showcmd
+
+" Show line numbers
+set number
+
+" Enable 256-colours
+set t_Co=256
+
+" Dark is better for reading
+set background=dark
+
+" Syntax highlighting
+syntax enable
+
+" Solarized ftw
+colorscheme solarized

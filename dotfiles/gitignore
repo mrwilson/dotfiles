@@ -1,0 +1,34 @@
+# Eclipse
+.classpath
+.project
+.settings/
+target/
+
+# Aoko
+musicserver.properties
+derby.log
+.factorpath
+.apt-generated
+.extract
+
+# Python
+*~
+*.pyc
+
+# Latex
+*.lof
+*.lol
+*.lot
+
+# TestNG
+test-output/
+
+# Vim
+*.swp
+
+# npm
+node_modules
+node-debug.log
+
+# General
+tmp

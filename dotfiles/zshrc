@@ -1,0 +1,16 @@
+zstyle :compinstall filename ~/.zshrc
+
+autoload zmv
+autoload colors && colors
+autoload -U compinit && compinit
+
+setopt autocd extendedglob nomatch notify shwordsplit 
+unsetopt beep
+
+if [ -f ~/.zshrc ]
+then
+	for FILE in ~/.zshrc.d/*
+	do
+		. $FILE
+	done
+fi
