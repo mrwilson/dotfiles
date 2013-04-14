@@ -1,0 +1,4 @@
+_salt() { sudo salt-call $* }
+
+alias ss='_salt state.highstate'
+alias ssp='_salt state.sls'
