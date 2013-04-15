@@ -6,7 +6,7 @@ work() {
 
 	sudo cp /etc/hosts /etc/hosts.play
 
-	for HOSTNAME in reddit.com news.ycombinator.com facebook.com bbcredux.com youtube.com news.bbc.co.uk uwcs.co.uk
+	for HOSTNAME in reddit.com news.ycombinator.com facebook.com youtube.com news.bbc.co.uk uwcs.co.uk imgur.com
 	do
 		echo "127.0.0.1	$HOSTNAME www.$HOSTNAME" | sudo tee -a /etc/hosts >/dev/null
 	done
