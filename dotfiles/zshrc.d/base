@@ -36,11 +36,13 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-for APP_DIR in ~/apps/*
-do
-    if [ -d $APP_DIR ]
-    then
-        export PATH=$PATH:${APP_DIR}/bin
-    fi
-done
-
+if [ $(ls ~/apps | wc -l) != 0 ]
+then
+	for APP_DIR in ~/apps/*
+	do
+    		if [ -d $APP_DIR ]
+    		then
+        		export PATH=$PATH:${APP_DIR}/bin
+    		fi
+	done
+fi
