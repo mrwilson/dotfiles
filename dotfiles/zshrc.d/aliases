@@ -23,3 +23,5 @@ off()  {
 }
 
 alias :q='exit'
+
+alias serve='python -m SimpleHTTPServer'
