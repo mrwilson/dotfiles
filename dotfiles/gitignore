@@ -2,7 +2,6 @@
 .classpath
 .project
 .settings/
-target/
 
 # Aoko
 musicserver.properties
@@ -27,8 +26,14 @@ test-output/
 *.swp
 
 # npm
-node_modules
+node_modules/
 node-debug.log
+
+# bower
+components/
 
 # General
 tmp
+build/
+dist/
+target/
