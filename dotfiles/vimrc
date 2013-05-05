@@ -39,3 +39,6 @@ syntax enable
 
 " Solarized ftw
 colorscheme solarized
+
+au BufNewFile,BufRead Vagrantfile set filetype=ruby
+au BufNewFile,BufRead *.sls set filetype=yaml
