@@ -13,6 +13,7 @@ derby.log
 # Python
 *~
 *.pyc
+*.egg-info
 
 # Latex
 *.lof
@@ -25,12 +26,17 @@ test-output/
 # Vim
 *.swp
 
+# Vagrant
+.vagrant
+
 # npm
 node_modules/
 node-debug.log
 
 # bower
 components/
+
+test.yaml
 
 # General
 tmp
