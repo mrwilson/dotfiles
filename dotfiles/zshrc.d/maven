@@ -1,0 +1,15 @@
+MVN_GROUPID=uk.co.probablyfine
+
+alias _mvn=/usr/bin/mvn
+
+mvn() {
+  if [ $1="init" ]; then
+    _mvn archetype:generate \
+      -DgroupId=$MVN_GROUPID \
+      -DartifactId=$2 \
+      -DarchetypeArtifactId=maven-archetype-quickstart \
+      -DinteractiveMode=false
+  else
+    _mvn $*
+  fi
+}
